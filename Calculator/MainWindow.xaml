@@ -5,19 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <StackPanel VerticalAlignment="Center"
-                    Margin="10">
-            <Label Content="Result"
-                   Margin="0,0,0,10"/>
-            <TextBox Text="0"
-                   Margin="0,0,0,10"/>
-            <TextBox Text="0"
-                   Margin="0,0,0,10"/>
-            <Button Content="Calculate"
-                    Background="DodgerBlue"
-                    Foreground="White"/>
-        </StackPanel>
+        Title="MainWindow" Height="525" Width="350">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="0"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               FontSize="60"
+               Grid.ColumnSpan="4"/>
     </Grid>
 </Window>
