@@ -142,6 +142,11 @@ namespace Calculator
 
         public static double Divide(double dividend, double divisor)
         {
+            if(divisor == 0)
+            {
+                MessageBox.Show("Division by 0 is not supported.", "Wrong operation", MessageBoxButton.OK, MessageBoxImage.Error);
+                return 0;
+            }
             return dividend / divisor;
         }
     }
