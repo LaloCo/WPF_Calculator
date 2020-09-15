@@ -6,11 +6,24 @@
     <Application.Resources>
         <SolidColorBrush x:Key="numbersColor" Color="#444444"/>
         <SolidColorBrush x:Key="operatorsColor" Color="Orange"/>
-        <SolidColorBrush x:Key="foregroundColor" Color="White"/>
+        <SolidColorBrush x:Key="othersColor" Color="LightGray"/>
+        <SolidColorBrush x:Key="lightForegroundColor" Color="White"/>
+        <SolidColorBrush x:Key="darkForegroundColor" Color="Black"/>
 
-        <Style TargetType="Button">
-            <Setter Property="Foreground" Value="{StaticResource foregroundColor}"/>
+        <Style TargetType="Button" x:Key="numberButtonStyle">
+            <Setter Property="Background" Value="{StaticResource numbersColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource lightForegroundColor}"/>
             <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="operatorButtonStyle" BasedOn="{StaticResource numberButtonStyle}">
+            <Setter Property="Background" Value="{StaticResource operatorsColor}"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="additionalButtonStyle" BasedOn="{StaticResource numberButtonStyle}">
+            <Setter Property="Background" Value="{StaticResource othersColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource darkForegroundColor}"/>
         </Style>
 
         <Style TargetType="Label">
