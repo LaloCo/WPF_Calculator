@@ -7,5 +7,14 @@
         <SolidColorBrush x:Key="numbersColor" Color="#444444"/>
         <SolidColorBrush x:Key="operatorsColor" Color="Orange"/>
         <SolidColorBrush x:Key="foregroundColor" Color="White"/>
+
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="{StaticResource foregroundColor}"/>
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="70"/>
+        </Style>
     </Application.Resources>
 </Application>
