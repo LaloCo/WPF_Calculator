@@ -129,6 +129,7 @@
                 Grid.Row="5"
                 Margin="5"/>
         <Button x:Name="pointButton"
+                Click="pointButton_Click"
                 Content="."
                 Grid.Row="5"
                 Grid.Column="2"
