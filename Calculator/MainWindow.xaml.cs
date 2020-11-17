@@ -72,10 +72,11 @@ namespace Calculator
 
         private void NegativeButton_Click(object sender, RoutedEventArgs e)
         {
-            if(double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            double number;
+            if(double.TryParse(resultLabel.Content.ToString(), out number))
             {
-                lastNumber = lastNumber * -1;
-                resultLabel.Content = lastNumber.ToString();
+                number = number * -1;
+                resultLabel.Content = number.ToString();
             }
         }
 
