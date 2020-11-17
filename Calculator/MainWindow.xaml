@@ -35,7 +35,7 @@
                 Grid.Row="1"/>
         <Button x:Name="negativeButton"
                 Style="{StaticResource additionalButtonStyle}"
-                Content="+/1"
+                Content="+/-"
                 Grid.Row="1"
                 Grid.Column="1"/>
         <Button x:Name="percentageButton"
